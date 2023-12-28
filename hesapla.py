@@ -6,15 +6,15 @@ def AsgariUcretZamOrani(mevcutMaas, zamliMaas):
     asgariUcret2024=17002
     asgariUcretZamOrani=(asgariUcret2024/asgariUcret2023)*100-100
     Ayrac()
-    print("Asgari Ücret Zam Orani % {0} " .format(asgariUcretZamOrani))
+    print(f"Asgari Ücret Zam Orani % {asgariUcretZamOrani} ")
     Ayrac()
 
     Ayrac()
-    print("Eski Maaşinizla Eski Asgari Ücret Arasindaki Fark: {0}" .format(mevcutMaas-asgariUcret2023))
+    print(f"Eski Maaşinizla Eski Asgari Ücret Arasindaki Fark: {mevcutMaas-asgariUcret2023}")
     Ayrac()
 
     Ayrac()
-    print("Zaamli Maaşinizla Zamli Asgari Ücret Arasindaki Fark: {0}" .format(zamliMaas-asgariUcret2024))
+    print(f"Zaamli Maaşinizla Zamli Asgari Ücret Arasindaki Fark: {zamliMaas-asgariUcret2024}")
     Ayrac()
     
 
@@ -34,7 +34,7 @@ while True:
         AsgariUcretZamOrani(mevcutMaas,zamliMaas)
 
         Ayrac()
-        print("Sizin Zam Orani % {0} " .format(maasZamOrani))
+        print(f"Sizin Zam Orani % {maasZamOrani} ")
         Ayrac()
 
 
@@ -43,7 +43,7 @@ while True:
         oran=float(input("Oran Giriniz: % "))
         zamliMaas= (mevcutMaas*oran)/100 + mevcutMaas
         Ayrac()
-        print("Girilen Oran'a Göre Yeni Maasiniz: {0}" .format(zamliMaas))
+        print(f"Girilen Oran'a Göre Yeni Maasiniz: {zamliMaas}")
         Ayrac()
 
         AsgariUcretZamOrani(mevcutMaas,zamliMaas)
